@@ -1,0 +1,315 @@
+<metadata>
+  <idinfo>
+    <citation>
+      <citeinfo>
+        <origin>Montana Natural Heritage Program</origin>
+        <pubdate>20021014</pubdate>
+        <title>National Forests and Ranger Districts in Montana, 2002</title>
+        <geoform>map</geoform>
+        <pubinfo>
+          <pubplace>Helena Montana</pubplace>
+          <publish>Montana State Library</publish>
+        </pubinfo>
+        <othercit>The former name of the data set on the NRIS web site was "nfrd"</othercit>
+        <onlink>ftp://ftp.geoinfo.msl.mt.gov/Data/Spatial/NonMSDI/Shapefiles/NationalForest2002.zip</onlink>
+      </citeinfo>
+    </citation>
+    <descript>
+      <abstract>This data set shows the national forest and ranger district boundaries in Montana, and national forest land that is outside the forest boundaries.  It does not distinguish among federal, state, and private lands that are inside the forest boundaries.
+
+In the Arc/Info coverage version of this data, National forests are represented by a 'region.forest' feature class and ranger districts by a 'region.district' feature class.  In the shapefile version, each polygon has a field for the forest and district name and attributes of the districts in its attribute table, and there is an additional table called forests.dbf that contains information about the forests.
+
+These data are extracted from the statewide land ownership and managed areas layer (stew) maintained by the MTNHP.
+
+Note that these data do not conform entirely with official national forest boundaries: (1) the boundaries included here have been expanded to encompass national forest system lands that lie outside of the official forest boundary and (2) many small and discrete polygons that have no national forest ownership but were (and are) included in the officially designated forest boundary are not included in these data.</abstract>
+    </descript>
+    <timeperd>
+      <timeinfo>
+        <rngdates>
+          <begdate>1975</begdate>
+          <enddate>20030227</enddate>
+        </rngdates>
+      </timeinfo>
+      <current>publication date</current>
+    </timeperd>
+    <status>
+      <progress>In work</progress>
+      <update>As needed</update>
+    </status>
+    <spdom>
+      <bounding>
+        <westbc>-116.18</westbc>
+        <eastbc>-103.66</eastbc>
+        <northbc>49.04</northbc>
+        <southbc>44.23</southbc>
+      </bounding>
+    </spdom>
+    <keywords>
+      <theme>
+        <themekt>ISO 19115 Topic Category</themekt>
+        <themekey>boundaries</themekey>
+        <themekey>planningCadastre</themekey>
+      </theme>
+      <theme>
+        <themekey>national forest</themekey>
+        <themekey>ranger district</themekey>
+      </theme>
+      <place>
+        <placekey>Montana</placekey>
+      </place>
+    </keywords>
+    <accconst>None</accconst>
+    <useconst>These data show the approximate location of National Forests in Montana.  They are not to be used to determine the legal owner of the land at any particular location, nor do they imply public access to any lands. Many private and state-owned parcels lie within the national forest boundaries depicted in these data.
+
+The Montana State Library provides this product/service for informational purposes only. The Library did not produce it for, nor is it suitable for legal, engineering, or surveying purposes. Consumers of this information should review or consult the primary data and information sources to ascertain the viability of the information for their purposes. The Library provides these data in good faith but does not represent or warrant its accuracy, adequacy, or completeness. In no event shall the Library be liable for any incorrect results or analysis; any direct, indirect, special, or consequential damages to any party; or any lost profits arising out of or in connection with the use or the inability to use the data or the services provided. The Library makes these data and services available as a convenience to the public, and for no other purpose. The Library reserves the right to change or revise published data and/or services at any time.</useconst>
+    <ptcontac>
+      <cntinfo>
+        <cntorgp>
+          <cntorg>Montana Natural Heritage Program</cntorg>
+        </cntorgp>
+        <cntaddr>
+          <addrtype>mailing address</addrtype>
+          <address>PO Box 201800</address>
+          <city>Helena</city>
+          <state>MT</state>
+          <postal>59620-1800</postal>
+        </cntaddr>
+        <cntvoice>406-444-5354</cntvoice>
+        <cnttdd>406-444-4799</cnttdd>
+        <cntfax>406-444-0266</cntfax>
+        <cntemail>geoinfo@mt.gov</cntemail>
+      </cntinfo>
+    </ptcontac>
+    <browse>
+      <browsen>ftp://ftp.geoinfo.msl.mt.gov/Documents/Maps/Thumbnails/20021115_597_thumb.jpg</browsen>
+      <browsed>Thumbnail Image of Montana National Forest Map</browsed>
+    </browse>
+    <browse>
+      <browsen>ftp://ftp.geoinfo.msl.mt.gov/Documents/Maps/Individual/20021115_597_2002_MTNatForest.gif</browsen>
+      <browsed>Montana National Forest Map</browsed>
+    </browse>
+  </idinfo>
+  <dataqual>
+    <attracc>
+      <attraccr>Forest and District names and contact information (address and phone) are taken from various National Forest websites (accessed from: http://www.fs.fed.us/recreation/map/state_list.shtml.)</attraccr>
+    </attracc>
+    <complete>Complete and current as of publication date.  Changes do occur in both national forest and ranger district boundaries as well as with names and contact information.</complete>
+    <posacc>
+      <horizpa>
+        <horizpar>This is basically 1:100000 scale (100K) data with a horizontal accuracy of approximately 170 feet.</horizpar>
+      </horizpa>
+    </posacc>
+    <lineage>
+      <srcinfo>
+        <srccite>
+          <citeinfo>
+            <origin>Montana Natural Heritage Program</origin>
+            <pubdate>20020925</pubdate>
+            <title>Land ownership and managed areas in Montana</title>
+            <pubinfo>
+              <pubplace>Helena  Montana</pubplace>
+              <publish>Montana State Library</publish>
+            </pubinfo>
+          </citeinfo>
+        </srccite>
+        <srcscale>100000</srcscale>
+        <srctime>
+          <timeinfo>
+            <rngdates>
+              <begdate>2000</begdate>
+              <enddate>20020925</enddate>
+            </rngdates>
+          </timeinfo>
+          <srccurr>publication date</srccurr>
+        </srctime>
+        <srccitea>stew</srccitea>
+        <srccontr>The data set is a subset of stew.</srccontr>
+      </srcinfo>
+      <procstep>
+        <procdesc>Polygons with CODES containing 'fs' are copied from stew to this layer.  The attributes are added and populated with the relevant forest and ranger district information. Then region.district and region.forest feature classes are created using 'regiondissolve'.</procdesc>
+        <procdate>20020925</procdate>
+      </procstep>
+      <procstep>
+        <procdesc>The name of the Kings Hill Ranger District in the Lewis and Clark National Forest was changed to White Sulphur Springs.</procdesc>
+        <procdate>20080623</procdate>
+      </procstep>
+    </lineage>
+  </dataqual>
+  <spdoinfo>
+    <direct>Vector</direct>
+    <ptvctinf>
+      <sdtsterm>
+        <sdtstype>G-polygon</sdtstype>
+        <ptvctcnt>286</ptvctcnt>
+      </sdtsterm>
+    </ptvctinf>
+  </spdoinfo>
+  <spref>
+    <horizsys>
+      <planar>
+        <gridsys>
+          <gridsysn>State Plane Coordinate System 1983</gridsysn>
+          <spcs>
+            <spcszone>2500</spcszone>
+            <lambertc>
+              <stdparll>45.000000</stdparll>
+              <stdparll>49.000000</stdparll>
+              <longcm>-109.500000</longcm>
+              <latprjo>44.250000</latprjo>
+              <feast>600000.000000</feast>
+              <fnorth>0.000000</fnorth>
+            </lambertc>
+          </spcs>
+        </gridsys>
+        <planci>
+          <plandu>Meters</plandu>
+        </planci>
+      </planar>
+      <geodetic>
+        <horizdn>North American Datum of 1983</horizdn>
+        <ellips>GRS1980</ellips>
+        <semiaxis>6378137</semiaxis>
+        <denflat>298.257</denflat>
+      </geodetic>
+    </horizsys>
+  </spref>
+  <eainfo>
+    <detailed>
+      <enttyp>
+        <enttypl>NationalForest2002.dbf</enttypl>
+        <enttypd>polygon attribute table</enttypd>
+      </enttyp>
+      <attr>
+        <attrlabl>FID</attrlabl>
+        <attrdef>Shapefile sequence number</attrdef>
+      </attr>
+      <attr>
+        <attrlabl>Shape</attrlabl>
+        <attrdef>Feature geometry</attrdef>
+      </attr>
+      <attr>
+        <attrlabl>AREA</attrlabl>
+        <attrdef>Area of polygon in square meters</attrdef>
+      </attr>
+      <attr>
+        <attrlabl>PERIMETER</attrlabl>
+        <attrdef>Perimeter of polygon in meters</attrdef>
+      </attr>
+      <attr>
+        <attrlabl>POLY_ID</attrlabl>
+        <attrdef>Polygon sequende number from original coverage version of the data</attrdef>
+      </attr>
+      <attr>
+        <attrlabl>CODE</attrlabl>
+        <attrdef>Unique forest district code</attrdef>
+      </attr>
+      <attr>
+        <attrlabl>ACRES</attrlabl>
+        <attrdef>Area of polygon in acres</attrdef>
+      </attr>
+      <attr>
+        <attrlabl>FOREST</attrlabl>
+        <attrdef>Name of Forest</attrdef>
+      </attr>
+      <attr>
+        <attrlabl>DISTRICT</attrlabl>
+        <attrdef>Name of Forest Ranger District</attrdef>
+      </attr>
+      <attr>
+        <attrlabl>MACODE</attrlabl>
+        <attrdef>Heritage Program record key</attrdef>
+      </attr>
+      <attr>
+        <attrlabl>ADDRESS</attrlabl>
+        <attrdef>Contact address</attrdef>
+      </attr>
+      <attr>
+        <attrlabl>CITY</attrlabl>
+        <attrdef>Contact address city</attrdef>
+      </attr>
+      <attr>
+        <attrlabl>STATE</attrlabl>
+        <attrdef>Contact address state</attrdef>
+      </attr>
+      <attr>
+        <attrlabl>ZIP</attrlabl>
+        <attrdef>Contact address zip code</attrdef>
+      </attr>
+      <attr>
+        <attrlabl>PHONE</attrlabl>
+        <attrdef>Contact phone number</attrdef>
+      </attr>
+    </detailed>
+  </eainfo>
+  <distinfo>
+    <distrib>
+      <cntinfo>
+        <cntorgp>
+          <cntorg>Montana State Library</cntorg>
+        </cntorgp>
+        <cntaddr>
+          <addrtype>mailing address</addrtype>
+          <address>PO Box 201800</address>
+          <city>Helena</city>
+          <state>MT</state>
+          <postal>59620-1800</postal>
+        </cntaddr>
+        <cntvoice>406-444-5354</cntvoice>
+        <cnttdd>406-444-4799</cnttdd>
+        <cntfax>406-444-0266</cntfax>
+        <cntemail>geoinfo@mt.gov</cntemail>
+      </cntinfo>
+    </distrib>
+    <distliab>The Montana State Library provides this product/service for informational purposes only. The Library did not produce it for, nor is it suitable for legal, engineering, or surveying purposes. Consumers of this information should review or consult the primary data and information sources to ascertain the viability of the information for their purposes. The Library provides these data in good faith but does not represent or warrant its accuracy, adequacy, or completeness. In no event shall the Library be liable for any incorrect results or analysis; any direct, indirect, special, or consequential damages to any party; or any lost profits arising out of or in connection with the use or the inability to use the data or the services provided. The Library makes these data and services available as a convenience to the public, and for no other purpose. The Library reserves the right to change or revise published data and/or services at any time.</distliab>
+    <resdesc>Downloadable Data</resdesc>
+    <stdorder>
+      <digform>
+        <digtinfo>
+          <formname>ESRI Shapefile</formname>
+        </digtinfo>
+        <digtopt>
+          <onlinopt>
+            <computer>
+              <networka>
+                <networkr>ftp://ftp.geoinfo.msl.mt.gov/Data/Spatial/NonMSDI/Shapefiles/NationalForest2002.zip</networkr>
+              </networka>
+            </computer>
+          </onlinopt>
+        </digtopt>
+      </digform>
+    </stdorder>
+  </distinfo>
+  <metainfo>
+    <metd>20140117</metd>
+    <metrd>20130417</metrd>
+    <metrd>20080623</metrd>
+    <metrd>20040929</metrd>
+    <metrd>20030227</metrd>
+    <metrd>20020926</metrd>
+    <metc>
+      <cntinfo>
+        <cntorgp>
+          <cntorg>Montana Natural Heritage Program</cntorg>
+          <cntper>Cedron Jones</cntper>
+        </cntorgp>
+        <cntpos>Mapping/GIS Specialist</cntpos>
+        <cntaddr>
+          <addrtype>mailing address</addrtype>
+          <address>PO Box 201800</address>
+          <city>Helena</city>
+          <state>MT</state>
+          <postal>59620-1800</postal>
+        </cntaddr>
+        <cntvoice>406-444-5354</cntvoice>
+        <cnttdd>406-444-4799</cnttdd>
+        <cntfax>406-444-0266</cntfax>
+        <cntemail>geoinfo@mt.gov</cntemail>
+      </cntinfo>
+    </metc>
+    <metstdn>FGDC Content Standards for Digital Geospatial Metadata</metstdn>
+    <metstdv>FGDC-STD-001-1998</metstdv>
+  </metainfo>
+  <Esri>
+    <PublishedDocID>{84FA0202-A107-41DB-9655-7D05AAD62423}</PublishedDocID>
+  </Esri>
+</metadata>
