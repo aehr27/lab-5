@@ -1,10 +1,1 @@
-Questions:
-1. Reflect on the labs from this semester. What did you learn? What did you like? What did you not
-like?
 
-I learned a ton from the labs this semester. The first two labs felt very similar to things I learned in the intro GIS course, just with a different method of getting there. Since I already knew what I needed to do, I just focused on recreating the steps I would take in ARC using R. It helped me get a good grasp on things. Learning about spatial autocorrelation was neat too. It was new to me (or I didn't pay enough attention in a previous course) and I immeadietly thought of all the things I could apply it to in the conservation world. I'm really excited to use it moving forward. Leaflet was also awesome! Making 'pretty' maps makes me happy, leaflet makes that a lot easier to do. I didn't dislike anything in particular about the labs, and I didn't think any of them were too difficult to understand, though I was lurking on some community forums to fix things at times (specifically in this lab - took me forever to fix my bozeman variable). I really enjoyed what I learned and have plans to continue using R this summer, both for fun and for research. I'm planning on catalogging the places I go throughout the summer the same way I added the hiking spot markers. I want to include the pictures I take too, and any data I collect. Anyway, thank you!
-
-2. Describe the “one thing” you chose to add to your map in Task 3 above. What did you do, and why
-is it applicable to your map?
-
-I chose to add some markers for popular hiking destinations in Gallatin National Forest that I'm hoping to visit/my cohort already has plans to visit (as mentioned above). It was more-so a trial run for adding locations I'll collect data at (which will be all over the state apparently, not just Gallatin County). I also techinically added a scalebar.
